@@ -51,7 +51,16 @@ a{
     padding: 8px;
 }
 .nav-toggle {
+    font-size: 20px;
     display: none;
+    position: fixed;
+    top: 0.6em;
+    right: 1em;
+    padding: 3px;
+    border-radius: 4px;
+    background-color: var(--nav-color);
+    color: var(--text-color);
+    border: 0;
 }
 
 @media screen and (max-width: 800px) {
@@ -59,7 +68,8 @@ a{
         flex-direction: column;
         align-items: flex-start;
     }
-.nav-menu {
+    .nav-menu {
+        display: none;
         margin:2%;
         width: 96%;
         flex-direction: column;
@@ -69,6 +79,7 @@ a{
         text-align: center;
     }
     .nav-link {
+        display: none;
         margin:0;
         justify-content: center; 
         width:100%;
@@ -77,19 +88,15 @@ a{
         padding:0;
     }
     .nav-toggle {
-        font-size: 20px;
         display: block;
-        position: fixed;
-        top: 0.8em;
-        right: 1em;
-        padding: 3px;
-        border-radius: 4px;
-        background-color: var(--nav-color);
-        color: var(--text-color);
-        border: 0;
     }
     .nav-toggle:hover {
         background-color: var(--highlight-color);
+    }
+
+    .nav-menu.active,
+    .nav-link.active {
+        display: flex;
     }
 
 
