@@ -1,0 +1,63 @@
+.nav-main {
+    margin:auto;
+    background-color:rgb(68, 68, 68);
+    color:antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav-logo {
+    margin: 10px;
+    padding: 6px;
+    
+}
+.nav-menu {
+    margin-right: 4px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin : 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+
+.current-video {
+    text-align: center;
+    background-color: black;
+}
+
+.current-video video {
+    width: 100%;
+    max-width: 1000px;
+}
+.video-name {
+    font-size: larger;
+    font-weight:700;
+}
+.views {
+    font-size: small;
+}
+
+.actions {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.actions i {
+    padding: 16px;
+    font-size: 32px;  
+}
+.publisher-info {
+    display: flex;
+}
+.publisher-info img {
+    border-radius: 50%;
+    max-width: 100px;
+}
